@@ -6,7 +6,7 @@ function comprar(){
 
     console.log(`Ingresso: ${tipoDeIngresso} Quantidade: ${quantidade} Quantidade de Ingressos: ${numeroDeIngresso}`);
 
-    if((numeroDeIngresso > quantidade)){
+    if((numeroDeIngresso - quantidade) >= 0){
 
         numeroDeIngresso = numeroDeIngresso - quantidade;
         document.getElementById(`qtd-${tipoDeIngresso}`).textContent = `${numeroDeIngresso}`;
